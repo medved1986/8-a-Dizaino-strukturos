@@ -1,6 +1,6 @@
 
 * {
-   box-sizing: border-box;
+   display: grid;
   }
     
  body {
@@ -24,6 +24,9 @@
  
  /* Style the top navigation bar */
  .topnav {
+  grid-template-columns: auto auto auto auto;
+  grid: column gap: 100px;
+          }
    overflow: hidden;
    background-color: #333;
  }
@@ -54,7 +57,7 @@
  /* Right column */
  .rightcolumn {
    float: left;
-   display: inline-block;
+  
     width: 25%;
    background-color: #f1f1f1;
    padding-left: 1.25rem;
@@ -64,8 +67,7 @@
  /* Fake image */
  .fakeimg {
    display: flex;
-   max-width: 100%;
-    max-height: 30%;
+       max-height: 100%;
      background-color: #aaa;
      padding: 1.25rem;
     }
@@ -95,18 +97,29 @@
  figcaption {
   text-align: bottom; 
  }
+  img{
+   
+
+    width: 100%;
+    
+    height: auto;
+    
+    }
 
  /* Responsive layout - when the screen is less than 720px wide, make the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 45rem) {
    .leftcolumn, .rightcolumn {   
+     display: table-column;
      width: 100%;
+
      padding: 0;
    }
  }
  
  /* Responsive layout - when the screen is less than 720px wide, make the navigation links stack on top of each other instead of next to each other */
  @media screen and (max-width: 45rem) {
-   .topnav a {
+   .body, .topnav a {
+    display: table-column;
      float: none;
      width: 100%;
    }}
