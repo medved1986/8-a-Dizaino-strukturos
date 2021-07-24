@@ -2,7 +2,8 @@
 * {
    display: grid;
   }
-    
+  script {
+    display: none;}
  body {
     font-family: 'Satisfy', cursive;
    padding: 0.625rem;
@@ -24,18 +25,19 @@
  
  /* Style the top navigation bar */
  .topnav {
-  grid-template-columns: auto auto auto auto;
-  grid: column gap: 0.7rem;
-   overflow: hidden;
-   background-color: #333;
+  grid-template-columns: 10% 10% 10% 60%;
+  grid: row gap 0.7rem;
+  overflow: hidden;
+  background-color: #333;
  }
  
  /* Style the topnav links */
  .topnav a {
+  
+   display: grid;
    float: left;
-   display: block;
    color: #f2f2f2;
-   text-align: center;
+   text-align: right;
    padding: 0.875rem 1rem;
    text-decoration: none;
  }
@@ -47,11 +49,11 @@
  }
 
   /* Clear floats after the columns */
-  .row:after {
+  .row {
     display: grid;
-    grid-template-columns: 69% 31%;
+    grid-template-columns: 69% 30%;
     content: "";
-        clear: both;
+   clear: both;
   }
 
  /* Create two unequal columns that floats next to each other */
@@ -64,10 +66,9 @@
  /* Right column */
  .rightcolumn {
    float: left;
-  
-    width: 25%;
+   width: 100%;
    background-color: #f1f1f1;
-   padding-left: 1.25rem;
+   padding-left: 1.0rem;
  }
  
 
@@ -89,35 +90,54 @@
   
  /* Footer */
  .footer {
+  
    padding: 1.25rem;
    text-align: center;
    background: #ddd;
    margin-top: 1.25rem;
  }
+
+.uzrasas  {
+ display: flex;
+align-items: baseline;
+justify-content: center;
+ /* justify-content: space-evenly; */
+  /* text-align: justify; */
+}
+
+
+
+
  figcaption {
-  text-align: bottom; 
+  text-align: bottom;
+  text-overflow: wrap;
  }
   img{
        width: 100%;
         height: auto;    
     }
 
+
  /* Responsive layout - when the screen is less than 720px wide, make the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 45rem) {
-   .leftcolumn, .rightcolumn {   
+   .leftcolumn, .rightcolumn, .body, .row {   
      display: table-column;
-     width: 100%;
-
+    width: 100%;
      padding: 0;
+     font-size: 1.25rem;
    }
  }
  
  /* Responsive layout - when the screen is less than 720px wide, make the navigation links stack on top of each other instead of next to each other */
  @media screen and (max-width: 45rem) {
-   .body, .topnav a {
-    display: table-column;
-     float: none;
-     width: 100%;
+  .topnav  {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    width: 100%;
+    font-size: 2rem;
    }}
+ 
 
+   
 

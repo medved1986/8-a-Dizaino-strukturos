@@ -23,7 +23,7 @@
          href="https://images.unsplash.com/photo-1624136364805-5de7f3a0748c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80">Link1</a>
       <a href="https://google.lt/" target="blank">Link2</a>
       <a href="https://15min.lt/">Link3</a>
-      <a href="https://github.com/medved1986/8-a-Dizaino-strukturos/" target="blank" style="float:right">Link4</a>
+      <a href="https://github.com/medved1986/8-a-Dizaino-strukturos/" target="blank">Link4</a>
    </div>
 
    <div class="row">
@@ -36,7 +36,9 @@
                   src="
                https://images.unsplash.com/photo-1428572184420-7d1092d8c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
                   alt="krok" ;>
-               <figcaption>krioklys</figcaption>
+               <figcaption>
+                  krioklys
+               </figcaption>
             </div>
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
@@ -94,8 +96,26 @@
 
    <div class="footer">
       <h2>Footer</h2>
-   </div>
+      <!-- <p> 4.Neprivalomas. Footer vietoje įkelti tekstą "© Vardas Pavardė Metai". Metai atvaizduojami JavaScript pagalba automatiškai.</p> -->
+      <div class="uzrasas">
+         <!-- <div class="vardas"> -->
+         <span> Vardas Pavardė</span>
+         <span id="date"></span> 
 
+
+         <!-- </div> -->
+         <!-- <div class="data"> -->
+
+
+
+         <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d.getUTCFullYear();
+         </script>
+         <!-- </div> -->
+
+      </div>
+   </div>
 </body>
 
 </html>
