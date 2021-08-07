@@ -28,8 +28,7 @@ h1{color: lightcyan;
 
 }
 span{color: lightcyan;
-   border-bottom: 1px solid lightcyan;
-   /* border: 1px solid black */
+ border-bottom: 1px solid lightcyan;
 }
-em{color: lightcyan;
+embed{color: lightcyan;
 }
