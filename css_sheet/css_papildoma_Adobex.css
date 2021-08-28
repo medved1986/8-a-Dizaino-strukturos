@@ -13,9 +13,12 @@
    }
 .blockleft{width: 40%;
    float: left;
+   
 
 }
 .blockright{width: 50%;
+  
+   height: 60%;
 
    float: left;
 
@@ -23,12 +26,12 @@
 img{
    width: 100%;
 height: fit-content;
-}
-h1{color: lightcyan;
 
 }
-span{color: lightcyan;
- border-bottom: 1px solid lightcyan;
+h2{color: lightcyan;
+   font-weight: 400;
 }
-embed{color: lightcyan;
+span{color: lightcyan;
+   font-style: normal;
+    /* border-bottom: 1px solid lightcyan; */
 }
